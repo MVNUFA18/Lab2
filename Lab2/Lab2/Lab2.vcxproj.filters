@@ -18,6 +18,24 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="ArithProgression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleProgression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FibProgression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeomProgression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Progression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SquareRootProgression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">

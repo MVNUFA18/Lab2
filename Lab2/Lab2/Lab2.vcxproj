@@ -151,7 +151,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ArithProgression.h" />
+    <ClInclude Include="DoubleProgression.h" />
+    <ClInclude Include="FibProgression.h" />
+    <ClInclude Include="GeomProgression.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Progression.h" />
+    <ClInclude Include="SquareRootProgression.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Lab2.cpp" />
