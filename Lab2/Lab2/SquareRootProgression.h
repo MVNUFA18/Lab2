@@ -1,29 +1,35 @@
-#ifndef SQUARE_ROOT_PROGRESSION  // avoid repeated expansion
+#ifndef SQUARE_ROOT_PROGRESSION 
 #define SQUARE_ROOT_PROGRESSION
 
 #include <iostream>
 #include "DoubleProgression.h"
 
-class SquareRootProgression {
-protected:              // member data
-	double first;				// first value of the progression
+using namespace std;
+
+class SquareRootProgression : public DoubleProgression {
+protected:					// member data
+	double first;			// first value of the progression
 	double cur;				// current value of the progression
 
+	virtual double nextValue() {
+		cur = sqrt(cur);
+		return cur;
+	}
+
 public:
-	SquareRootProgression(double f = 0)		// constructor given first value
-	{
+	// Constructor
+	SquareRootProgression(double f = 65536)
+		: DoubleProgression(f) {
 		cur = first = f;
 	}
-	void printProgression(int n);		// print the first n values
-	virtual ~DoubleProgression() { }		// virtual destructor
+	void printProgression(int n);					// print the first n values
+	virtual ~SquareRootProgression() { }		    // destructor
 };
-
-void DoubleProgression::printProgression(int n) {
-	std::cout << firstValue();		// print the first value
-	for (int i = 2; i <= n; i++) {
-		std::cout << ' ' << nextValue();	// print values 2 through n
+	void SquareRootProgression::printProgression(int n) {
+		cout << firstValue();						// prints first value
+		for (int i = 0; i < n; i++) {
+		cout << ' ' << nextValue() << '\n';			// prints as many times as given
+		}
+		cout << endl;							    // print end of line
 	}
-	std::cout << '\n';			// print end of line
-}
-
 #endif

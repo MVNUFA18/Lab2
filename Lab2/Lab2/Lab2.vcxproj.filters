@@ -21,9 +21,6 @@
     <ClInclude Include="ArithProgression.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="DoubleProgression.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="FibProgression.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -31,6 +28,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Progression.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DoubleProgression.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="SquareRootProgression.h">
@@ -42,6 +42,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Lab2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="runProgression.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
