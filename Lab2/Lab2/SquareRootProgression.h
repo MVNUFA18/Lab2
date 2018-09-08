@@ -26,7 +26,7 @@ public:
 	virtual ~SquareRootProgression() { }		    // destructor
 };
 	void SquareRootProgression::printProgression(int n) {
-		cout << firstValue();						// prints first value
+		cout << "Starting Value: " << firstValue() << '\n';						// prints first value
 		for (int i = 0; i < n; i++) {
 		cout << ' ' << nextValue() << '\n';			// prints as many times as given
 		}
